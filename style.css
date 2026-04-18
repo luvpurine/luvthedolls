@@ -1,0 +1,642 @@
+@font-face {
+    font-family: altehaas;
+    src: url(AlteHaasGroteskBold.ttf);
+}
+
+@font-face {
+    font-family: paradise;
+    src: url(Birds\ of\ Paradise\ ╕\ PERSONAL\ USE\ ONLY.ttf);
+}
+
+@font-face {
+    font-family: pfpixel;
+    src: url(PFPixelscriptPro.ttf);
+}
+
+.garden{
+    background-image: url("grass.jpg");
+}
+
+
+*{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+*:-webkit-scrollbar {
+    display: none;
+}
+
+i {
+    display: inline;
+}
+
+#garden-popup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 10px;
+    width: 75%;
+    height: 50%;
+    text-align: center;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 3;
+}
+
+.popup{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.fa-solid fa-x{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+.fa-solid fa-x:hover{
+    color:blue;
+    
+}
+
+.garden{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 300vh;
+    width: 100vw;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+ 
+.menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 200vh;
+    width: 100vw;
+}
+
+.flowers{
+    display: inline;
+    z-index: 2;
+    height: 10px;
+    width: 10px;
+
+}
+
+
+.flowerText{
+    font-family: paradise;
+    background-color: rgb(255, 248, 196);
+    color: rgb(105, 127, 177);
+    font-size: 40px;
+    width: 18vw;
+    height: auto;
+    text-align: center;
+}
+
+.items{
+    display: inline;
+    z-index: 2;
+    height: 10px;
+    width: 10px;
+    font-family: paradise;
+    font-size: 30px;
+    color: rgb(255, 111, 142);
+    background-color: beige;
+    width: 10vw;
+    min-height: 2.5vw;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(59, 38, 30);
+}
+
+.bakeHead{
+    font-family: paradise;
+    font-size: 30px;
+    color: rgb(255, 111, 142);
+    background-color: beige;
+    width: 10vw;
+    height: 2.5vw;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(59, 38, 30);
+}
+
+.flower{
+    filter: drop-shadow(8px 8px 0px black);
+    height: 2800%;
+    width: 2800%;
+}
+
+
+@keyframes turnGray{
+    0% {filter: grayscale(0%)}
+    50% {filter: grayscale(50%)}
+    100%{filter: grayscale(100%)}
+}
+.flower:hover{
+    filter: grayscale(100%);
+    animation-name: turnGray;
+    animation-duration: 0.5s;
+}
+
+.item{
+    filter: drop-shadow(8px 8px);
+    height: 300px;
+    width: 300px;
+} 
+
+#gardenBody{
+    width: 100vw;
+    overflow-x: hidden;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-image: url("grass.jpg");
+    margin-top: 0px;
+}
+
+#bakeryBody{
+    background-image: url(pinkcrossplaid.jpg);
+    overflow: hidden;
+}
+
+#infashion{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-image: url(neoplaid.jpg);
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 82vw;
+    height: 91vh;
+    text-align: center;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 3;
+}
+
+#inmedia{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-image: url(neoplaid.jpg);
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 82vw;
+    height: 91vh;
+    text-align: center;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 3;
+}
+
+#instem{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-image: url(neoplaid.jpg);
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 82vw;
+    height: 91vh;
+    text-align: center;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 3;
+}
+
+#in-athletics{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-image: url(neoplaid.jpg);
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 82vw;
+    height: 91vh;
+    text-align: center;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 3;
+}
+
+#inmusic{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-image: url(neoplaid.jpg);
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 82vw;
+    height: 91vh;
+    text-align: center;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 3;
+}
+
+#inpolitics{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-image: url(neoplaid.jpg);
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 82vw;
+    height: 91vh;
+    text-align: center;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 3;
+}
+
+#influencers{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-image: url(neoplaid.jpg);
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 82vw;
+    height: 91vh;
+    text-align: center;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 3;
+}
+
+#screenstage{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-image: url(neoplaid.jpg);
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 82vw;
+    height: 91vh;
+    text-align: center;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 3;
+}
+
+#bakery-popup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: lightpink;
+    border-radius: 10px;
+    width: 75%;
+    height: 50%;
+    text-align: center;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 3;
+}
+
+
+@keyframes bakeAnimation {
+    from {height: 300px; width: 300px;}
+    to {height: 350px; width: 350px}
+}
+
+
+.item:hover{
+    animation-name: bakeAnimation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.repNames{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 75vh;
+    width: 34vw;
+    position: relative;
+    left: 700px;
+    top: 50px;
+    -ms-overflow-style: auto;  /* IE and Edge */
+    scrollbar-width: auto;  /* Firefox */
+}
+
+.repNames:-webkit-scrollbar {
+    display: block;
+}
+.reps{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    height: 440px;
+    width: auto;
+    padding: 2.5%;
+    font-family: altehaas;
+    font-size: auto;
+
+}
+
+#rep1{
+    background-color: #D8FC74;
+    border-radius: 5px;
+}
+
+#rep2{
+    background-color: #ffa2d2;
+    border-radius: 5px;
+}
+
+#rep3{
+    background-color: #ffeca7;
+    border-radius: 5px;
+}
+
+.button{
+    background-image: linear-gradient(to bottom, rgb(255, 255, 252), rgb(255, 192, 217));
+    font-family: paradise;
+    border-radius: 7px;
+    color: black;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    border-width: 2px;
+    border-color: black;
+}
+
+.popupText{
+    font-family: altehaas;
+    color:black;
+    font-size: 30px;
+    padding: 2%;
+}
+
+@keyframes pinkInfo{
+    0% {bottom: 0vh;}
+    25% {bottom: 25vh}
+    50% {bottom: 50vh;}
+    75% {bottom: 75vh;}
+    100% {bottom: 100vh;}
+}
+
+
+
+#pinkInfo{
+    height: 100vh; 
+    z-index: 2; 
+    background-color: rgb(248, 159, 199); 
+    animation-name: pinkInfo;
+    animation-duration: 4s;
+    animation-timeline: view();
+    animation-range: cover;
+    animation-fill-mode: forwards;
+    position: sticky; 
+    top:0;
+    padding: 0.75%;
+
+}
+
+#yellowInfo{
+    height: 75vh; 
+    z-index: 3; 
+    background-color: rgb(255, 226, 78); 
+    
+    position: sticky;
+    top: 25vh;
+    padding: 0.75%;
+    
+
+}
+
+#greenInfo{
+    height: 50vh; 
+    z-index: 4; 
+    background-color: rgb(200, 255, 113);
+    position: sticky;
+    top: 50vh;
+    padding: 0.75%;
+}
+
+#blueInfo{
+    height: 25vh; 
+    z-index: 5; 
+    background-color: rgb(147, 217, 255);
+    position: sticky;
+    top: 75vh;
+    padding: 0.75%;
+}
+
+#gardenTitleContainer{
+    z-index: 2;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#gardenTitle{
+    color: white;
+    font-family: pfpixel;
+    font-size: 250px;
+    text-align: center;
+}
+
+#heartContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 90vh;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#heartItem{
+    height: 150px;
+    width: auto;
+    position: relative;
+    place-items: center;
+    text-align: center;
+
+}
+
+.flagMask{
+    -webkit-mask-image: url(rotating-heart-ezgif.com-gif-maker.gif);
+    mask-image: url(rotating-heart-ezgif.com-gif-maker.gif);
+    mask-repeat: no-repeat;    
+    mask-position: center;
+    mask-size: contain;
+    mask-border-width: 2px;
+}
+
+#abtQuestion{
+    font-family: paradise;
+    font-size: 50px;
+}
+
+#abtAnswer{
+    font-family: altehaas;
+    font-size: 19px;
+}
+
+#abtBody{
+    margin: 0%;
+}
+
+.navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2%;
+}
+
+.navButt{
+    padding: 0.75%;
+    text-decoration: none;
+    background-image: linear-gradient(to bottom, rgb(255, 255, 252), rgb(255, 192, 217));
+    border-radius: 10px;
+    font-family: altehaas;
+    color: black;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}
+
+#dim{
+
+    height: 100vh; 
+    width: 100vw;
+    z-index: 3;
+    position: absolute;
+    background-color: black;
+    opacity: 0.75;
+}
+
+#gardenText{
+    font-size: 35px;
+    font-family: paradise;
+    color: navy;
+}
+
+#bakeryText{
+    font-size: 35px;
+    font-family: paradise;
+    color: maroon;
+}
+
+.memoryInfo{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgb(229, 231, 199);
+    border-radius: 10px;
+    font-family: altehaas;
+    font-size: 22px;
+    width: 82vw;
+    height: 91vh;
+    text-align: center;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 5;
+}
+
+.closeButton{
+
+    padding: 0.75%;
+    text-decoration: none;
+    background-image: linear-gradient(to bottom, rgb(255, 255, 252), rgb(192, 221, 255));
+    border-radius: 10px;
+    font-family: altehaas;
+    color: black;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    cursor: pointer;
+
+}
+
+#memoryContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+#resourceContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#resourceItem{
+    width: 95vw;
+    padding: 10%;
+    font-family: paradise;
+    font-size: 100px;
+    height: 25vh;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#resourceText{
+    text-decoration: none;
+    color: black;
+}
